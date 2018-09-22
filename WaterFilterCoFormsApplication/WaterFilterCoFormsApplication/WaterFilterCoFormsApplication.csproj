@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilterCompanyDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FilterCompanyDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FormLoginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,8 +63,17 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCustomerRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomerRecord.Designer.cs">
+      <DependentUpon>FormCustomerRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormcustomerRecord.resx">
+      <DependentUpon>FormCustomerRecord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLoginScreen.resx">
       <DependentUpon>FormLoginScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +89,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="FilterCompanyDataSet.xsc">
+      <DependentUpon>FilterCompanyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FilterCompanyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FilterCompanyDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FilterCompanyDataSet.xss">
+      <DependentUpon>FilterCompanyDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

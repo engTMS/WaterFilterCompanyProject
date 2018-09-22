@@ -32,15 +32,14 @@
             this.tabPage_customers = new System.Windows.Forms.TabPage();
             this.button_dataEntry = new System.Windows.Forms.Button();
             this.groupBox_customerData = new System.Windows.Forms.GroupBox();
-            this.textBox_lastName = new System.Windows.Forms.TextBox();
-            this.label_lastName = new System.Windows.Forms.Label();
-            this.textBox_midName = new System.Windows.Forms.TextBox();
-            this.label_midName = new System.Windows.Forms.Label();
-            this.textBox_firstName = new System.Windows.Forms.TextBox();
-            this.label_firstName = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox_id = new System.Windows.Forms.TextBox();
             this.button_customerRecord = new System.Windows.Forms.Button();
+            this.textBox_address = new System.Windows.Forms.TextBox();
+            this.textBox_phoneNumber = new System.Windows.Forms.TextBox();
+            this.label_phoneNumber = new System.Windows.Forms.Label();
+            this.textBox_customerName = new System.Windows.Forms.TextBox();
+            this.label_customerName = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label_address = new System.Windows.Forms.Label();
             this.tabControlMain.SuspendLayout();
             this.tabPage_customers.SuspendLayout();
             this.groupBox_customerData.SuspendLayout();
@@ -87,14 +86,13 @@
             // 
             // groupBox_customerData
             // 
+            this.groupBox_customerData.Controls.Add(this.label_address);
             this.groupBox_customerData.Controls.Add(this.button_customerRecord);
-            this.groupBox_customerData.Controls.Add(this.textBox_id);
-            this.groupBox_customerData.Controls.Add(this.textBox_lastName);
-            this.groupBox_customerData.Controls.Add(this.label_lastName);
-            this.groupBox_customerData.Controls.Add(this.textBox_midName);
-            this.groupBox_customerData.Controls.Add(this.label_midName);
-            this.groupBox_customerData.Controls.Add(this.textBox_firstName);
-            this.groupBox_customerData.Controls.Add(this.label_firstName);
+            this.groupBox_customerData.Controls.Add(this.textBox_address);
+            this.groupBox_customerData.Controls.Add(this.textBox_phoneNumber);
+            this.groupBox_customerData.Controls.Add(this.label_phoneNumber);
+            this.groupBox_customerData.Controls.Add(this.textBox_customerName);
+            this.groupBox_customerData.Controls.Add(this.label_customerName);
             this.groupBox_customerData.Location = new System.Drawing.Point(1, 1);
             this.groupBox_customerData.Name = "groupBox_customerData";
             this.groupBox_customerData.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -104,54 +102,56 @@
             this.groupBox_customerData.Text = "تسجيل بيانات العميل";
             this.groupBox_customerData.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox_lastName
+            // button_customerRecord
             // 
-            this.textBox_lastName.Location = new System.Drawing.Point(6, 29);
-            this.textBox_lastName.Name = "textBox_lastName";
-            this.textBox_lastName.Size = new System.Drawing.Size(100, 20);
-            this.textBox_lastName.TabIndex = 3;
+            this.button_customerRecord.Location = new System.Drawing.Point(30, 59);
+            this.button_customerRecord.Name = "button_customerRecord";
+            this.button_customerRecord.Size = new System.Drawing.Size(111, 31);
+            this.button_customerRecord.TabIndex = 5;
+            this.button_customerRecord.Text = "بيانات أخرى ...";
+            this.button_customerRecord.UseVisualStyleBackColor = true;
+            this.button_customerRecord.Click += new System.EventHandler(this.button_customerRecord_Click);
             // 
-            // label_lastName
+            // textBox_address
             // 
-            this.label_lastName.AutoSize = true;
-            this.label_lastName.Location = new System.Drawing.Point(133, 29);
-            this.label_lastName.Name = "label_lastName";
-            this.label_lastName.Size = new System.Drawing.Size(36, 13);
-            this.label_lastName.TabIndex = 2;
-            this.label_lastName.Text = "اللقب";
+            this.textBox_address.Location = new System.Drawing.Point(257, 65);
+            this.textBox_address.Name = "textBox_address";
+            this.textBox_address.Size = new System.Drawing.Size(282, 20);
+            this.textBox_address.TabIndex = 4;
             // 
-            // textBox_midName
+            // textBox_phoneNumber
             // 
-            this.textBox_midName.Location = new System.Drawing.Point(218, 26);
-            this.textBox_midName.Name = "textBox_midName";
-            this.textBox_midName.Size = new System.Drawing.Size(100, 20);
-            this.textBox_midName.TabIndex = 3;
+            this.textBox_phoneNumber.Location = new System.Drawing.Point(6, 29);
+            this.textBox_phoneNumber.Name = "textBox_phoneNumber";
+            this.textBox_phoneNumber.Size = new System.Drawing.Size(154, 20);
+            this.textBox_phoneNumber.TabIndex = 3;
             // 
-            // label_midName
+            // label_phoneNumber
             // 
-            this.label_midName.AutoSize = true;
-            this.label_midName.Location = new System.Drawing.Point(337, 29);
-            this.label_midName.Name = "label_midName";
-            this.label_midName.Size = new System.Drawing.Size(81, 13);
-            this.label_midName.TabIndex = 2;
-            this.label_midName.Text = "الإسم الأوسط";
+            this.label_phoneNumber.AutoSize = true;
+            this.label_phoneNumber.Location = new System.Drawing.Point(166, 29);
+            this.label_phoneNumber.Name = "label_phoneNumber";
+            this.label_phoneNumber.Size = new System.Drawing.Size(63, 13);
+            this.label_phoneNumber.TabIndex = 2;
+            this.label_phoneNumber.Text = "رقم الهاتف";
             // 
-            // textBox_firstName
+            // textBox_customerName
             // 
-            this.textBox_firstName.Location = new System.Drawing.Point(439, 29);
-            this.textBox_firstName.Name = "textBox_firstName";
-            this.textBox_firstName.Size = new System.Drawing.Size(100, 20);
-            this.textBox_firstName.TabIndex = 1;
+            this.textBox_customerName.Location = new System.Drawing.Point(257, 29);
+            this.textBox_customerName.Name = "textBox_customerName";
+            this.textBox_customerName.Size = new System.Drawing.Size(282, 20);
+            this.textBox_customerName.TabIndex = 1;
+            this.textBox_customerName.TextChanged += new System.EventHandler(this.textBox_firstName_TextChanged);
             // 
-            // label_firstName
+            // label_customerName
             // 
-            this.label_firstName.AutoSize = true;
-            this.label_firstName.Location = new System.Drawing.Point(566, 29);
-            this.label_firstName.Name = "label_firstName";
-            this.label_firstName.Size = new System.Drawing.Size(68, 13);
-            this.label_firstName.TabIndex = 0;
-            this.label_firstName.Text = "الإسم الأول";
-            this.label_firstName.Click += new System.EventHandler(this.label1_Click);
+            this.label_customerName.AutoSize = true;
+            this.label_customerName.Location = new System.Drawing.Point(566, 29);
+            this.label_customerName.Name = "label_customerName";
+            this.label_customerName.Size = new System.Drawing.Size(68, 13);
+            this.label_customerName.TabIndex = 0;
+            this.label_customerName.Text = "إسم العميل";
+            this.label_customerName.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabPage2
             // 
@@ -163,21 +163,14 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox_id
+            // label_address
             // 
-            this.textBox_id.Location = new System.Drawing.Point(439, 65);
-            this.textBox_id.Name = "textBox_id";
-            this.textBox_id.Size = new System.Drawing.Size(100, 20);
-            this.textBox_id.TabIndex = 4;
-            // 
-            // button_customerRecord
-            // 
-            this.button_customerRecord.Location = new System.Drawing.Point(182, 63);
-            this.button_customerRecord.Name = "button_customerRecord";
-            this.button_customerRecord.Size = new System.Drawing.Size(111, 31);
-            this.button_customerRecord.TabIndex = 5;
-            this.button_customerRecord.Text = "بيانات أخرى ...";
-            this.button_customerRecord.UseVisualStyleBackColor = true;
+            this.label_address.AutoSize = true;
+            this.label_address.Location = new System.Drawing.Point(566, 68);
+            this.label_address.Name = "label_address";
+            this.label_address.Size = new System.Drawing.Size(79, 13);
+            this.label_address.TabIndex = 6;
+            this.label_address.Text = "عنوان التركيب";
             // 
             // FormMain
             // 
@@ -202,14 +195,13 @@
         private System.Windows.Forms.TabPage tabPage_customers;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.GroupBox groupBox_customerData;
-        private System.Windows.Forms.TextBox textBox_firstName;
-        private System.Windows.Forms.Label label_firstName;
-        private System.Windows.Forms.TextBox textBox_lastName;
-        private System.Windows.Forms.Label label_lastName;
-        private System.Windows.Forms.TextBox textBox_midName;
-        private System.Windows.Forms.Label label_midName;
+        private System.Windows.Forms.TextBox textBox_customerName;
+        private System.Windows.Forms.Label label_customerName;
+        private System.Windows.Forms.TextBox textBox_phoneNumber;
+        private System.Windows.Forms.Label label_phoneNumber;
         private System.Windows.Forms.Button button_dataEntry;
-        private System.Windows.Forms.TextBox textBox_id;
+        private System.Windows.Forms.TextBox textBox_address;
         private System.Windows.Forms.Button button_customerRecord;
+        private System.Windows.Forms.Label label_address;
     }
 }
