@@ -92,5 +92,30 @@ namespace WaterFilterCoFormsApplication
         {
 
         }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox_accountData_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox_paymentType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
