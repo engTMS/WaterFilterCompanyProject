@@ -47,7 +47,6 @@
             this.label_phoneNumber = new System.Windows.Forms.Label();
             this.textBox_customerName = new System.Windows.Forms.TextBox();
             this.label_customerName = new System.Windows.Forms.Label();
-            this.tabPage_operationOrder = new System.Windows.Forms.TabPage();
             this.groupBox_accountData = new System.Windows.Forms.GroupBox();
             this.label_downPayment = new System.Windows.Forms.Label();
             this.textBox_downPayment = new System.Windows.Forms.TextBox();
@@ -69,11 +68,41 @@
             this.radioButton_payAll = new System.Windows.Forms.RadioButton();
             this.radioButton_semiPayment = new System.Windows.Forms.RadioButton();
             this.radioButton_installment = new System.Windows.Forms.RadioButton();
+            this.tabPage_operationOrder = new System.Windows.Forms.TabPage();
+            this.groupBox_customer = new System.Windows.Forms.GroupBox();
+            this.label_addressMaint = new System.Windows.Forms.Label();
+            this.textBox_addressMaint = new System.Windows.Forms.TextBox();
+            this.textBox_phone = new System.Windows.Forms.TextBox();
+            this.label_phone = new System.Windows.Forms.Label();
+            this.textBox_nameCust = new System.Windows.Forms.TextBox();
+            this.label_nameCust = new System.Windows.Forms.Label();
+            this.groupBox_techData = new System.Windows.Forms.GroupBox();
+            this.button_technicianRecord = new System.Windows.Forms.Button();
+            this.textBoxtechPhone = new System.Windows.Forms.TextBox();
+            this.label_techPhone = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label_techName = new System.Windows.Forms.Label();
+            this.groupBox_maintData = new System.Windows.Forms.GroupBox();
+            this.label_maintRequired = new System.Windows.Forms.Label();
+            this.button_maintAdd = new System.Windows.Forms.Button();
+            this.textBox_maintRequired = new System.Windows.Forms.TextBox();
+            this.textBox_equipMaint = new System.Windows.Forms.TextBox();
+            this.label_equipMaint = new System.Windows.Forms.Label();
+            this.textBox_dateMaint = new System.Windows.Forms.TextBox();
+            this.label_dateMaint = new System.Windows.Forms.Label();
+            this.label_maintPrice = new System.Windows.Forms.Label();
+            this.textBox_maintPrice = new System.Windows.Forms.TextBox();
+            this.button_maintOrderCopy = new System.Windows.Forms.Button();
+            this.button_maintExit = new System.Windows.Forms.Button();
             this.tabControlMain.SuspendLayout();
             this.tabPage_contractInfo.SuspendLayout();
             this.groupBox_purchaseData.SuspendLayout();
             this.groupBox_customerData.SuspendLayout();
             this.groupBox_accountData.SuspendLayout();
+            this.tabPage_operationOrder.SuspendLayout();
+            this.groupBox_customer.SuspendLayout();
+            this.groupBox_techData.SuspendLayout();
+            this.groupBox_maintData.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlMain
@@ -271,16 +300,6 @@
             this.label_customerName.TabIndex = 0;
             this.label_customerName.Text = "إسم العميل";
             this.label_customerName.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // tabPage_operationOrder
-            // 
-            this.tabPage_operationOrder.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_operationOrder.Name = "tabPage_operationOrder";
-            this.tabPage_operationOrder.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_operationOrder.Size = new System.Drawing.Size(783, 510);
-            this.tabPage_operationOrder.TabIndex = 1;
-            this.tabPage_operationOrder.Text = "أمر شغل / صيانة";
-            this.tabPage_operationOrder.UseVisualStyleBackColor = true;
             // 
             // groupBox_accountData
             // 
@@ -484,6 +503,252 @@
             this.radioButton_installment.Text = "تقسيط";
             this.radioButton_installment.UseVisualStyleBackColor = true;
             // 
+            // tabPage_operationOrder
+            // 
+            this.tabPage_operationOrder.Controls.Add(this.button_maintExit);
+            this.tabPage_operationOrder.Controls.Add(this.button_maintOrderCopy);
+            this.tabPage_operationOrder.Controls.Add(this.textBox_dateMaint);
+            this.tabPage_operationOrder.Controls.Add(this.groupBox_maintData);
+            this.tabPage_operationOrder.Controls.Add(this.label_dateMaint);
+            this.tabPage_operationOrder.Controls.Add(this.groupBox_techData);
+            this.tabPage_operationOrder.Controls.Add(this.groupBox_customer);
+            this.tabPage_operationOrder.Location = new System.Drawing.Point(4, 25);
+            this.tabPage_operationOrder.Name = "tabPage_operationOrder";
+            this.tabPage_operationOrder.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_operationOrder.Size = new System.Drawing.Size(783, 510);
+            this.tabPage_operationOrder.TabIndex = 1;
+            this.tabPage_operationOrder.Text = "أمر شغل / صيانة";
+            this.tabPage_operationOrder.UseVisualStyleBackColor = true;
+            // 
+            // groupBox_customer
+            // 
+            this.groupBox_customer.Controls.Add(this.label_addressMaint);
+            this.groupBox_customer.Controls.Add(this.textBox_addressMaint);
+            this.groupBox_customer.Controls.Add(this.textBox_phone);
+            this.groupBox_customer.Controls.Add(this.label_phone);
+            this.groupBox_customer.Controls.Add(this.textBox_nameCust);
+            this.groupBox_customer.Controls.Add(this.label_nameCust);
+            this.groupBox_customer.Location = new System.Drawing.Point(3, 70);
+            this.groupBox_customer.Name = "groupBox_customer";
+            this.groupBox_customer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox_customer.Size = new System.Drawing.Size(778, 100);
+            this.groupBox_customer.TabIndex = 1;
+            this.groupBox_customer.TabStop = false;
+            this.groupBox_customer.Text = "بيانات العميل";
+            // 
+            // label_addressMaint
+            // 
+            this.label_addressMaint.AutoSize = true;
+            this.label_addressMaint.Location = new System.Drawing.Point(699, 66);
+            this.label_addressMaint.Name = "label_addressMaint";
+            this.label_addressMaint.Size = new System.Drawing.Size(62, 13);
+            this.label_addressMaint.TabIndex = 6;
+            this.label_addressMaint.Text = "عنوان الجهاز";
+            // 
+            // textBox_addressMaint
+            // 
+            this.textBox_addressMaint.Location = new System.Drawing.Point(390, 63);
+            this.textBox_addressMaint.Name = "textBox_addressMaint";
+            this.textBox_addressMaint.Size = new System.Drawing.Size(282, 20);
+            this.textBox_addressMaint.TabIndex = 4;
+            // 
+            // textBox_phone
+            // 
+            this.textBox_phone.Location = new System.Drawing.Point(139, 27);
+            this.textBox_phone.Name = "textBox_phone";
+            this.textBox_phone.Size = new System.Drawing.Size(154, 20);
+            this.textBox_phone.TabIndex = 3;
+            // 
+            // label_phone
+            // 
+            this.label_phone.AutoSize = true;
+            this.label_phone.Location = new System.Drawing.Point(299, 27);
+            this.label_phone.Name = "label_phone";
+            this.label_phone.Size = new System.Drawing.Size(55, 13);
+            this.label_phone.TabIndex = 2;
+            this.label_phone.Text = "رقم الهاتف";
+            // 
+            // textBox_nameCust
+            // 
+            this.textBox_nameCust.Location = new System.Drawing.Point(390, 27);
+            this.textBox_nameCust.Name = "textBox_nameCust";
+            this.textBox_nameCust.Size = new System.Drawing.Size(282, 20);
+            this.textBox_nameCust.TabIndex = 1;
+            // 
+            // label_nameCust
+            // 
+            this.label_nameCust.AutoSize = true;
+            this.label_nameCust.Location = new System.Drawing.Point(699, 27);
+            this.label_nameCust.Name = "label_nameCust";
+            this.label_nameCust.Size = new System.Drawing.Size(63, 13);
+            this.label_nameCust.TabIndex = 0;
+            this.label_nameCust.Text = "إسم العميل";
+            // 
+            // groupBox_techData
+            // 
+            this.groupBox_techData.Controls.Add(this.button_technicianRecord);
+            this.groupBox_techData.Controls.Add(this.textBoxtechPhone);
+            this.groupBox_techData.Controls.Add(this.label_techPhone);
+            this.groupBox_techData.Controls.Add(this.textBox6);
+            this.groupBox_techData.Controls.Add(this.label_techName);
+            this.groupBox_techData.Location = new System.Drawing.Point(3, 340);
+            this.groupBox_techData.Name = "groupBox_techData";
+            this.groupBox_techData.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox_techData.Size = new System.Drawing.Size(778, 100);
+            this.groupBox_techData.TabIndex = 7;
+            this.groupBox_techData.TabStop = false;
+            this.groupBox_techData.Text = "بيانات الفني";
+            // 
+            // button_technicianRecord
+            // 
+            this.button_technicianRecord.Location = new System.Drawing.Point(222, 60);
+            this.button_technicianRecord.Name = "button_technicianRecord";
+            this.button_technicianRecord.Size = new System.Drawing.Size(111, 31);
+            this.button_technicianRecord.TabIndex = 5;
+            this.button_technicianRecord.Text = "بيانات أخرى ...";
+            this.button_technicianRecord.UseVisualStyleBackColor = true;
+            // 
+            // textBoxtechPhone
+            // 
+            this.textBoxtechPhone.Location = new System.Drawing.Point(518, 60);
+            this.textBoxtechPhone.Name = "textBoxtechPhone";
+            this.textBoxtechPhone.Size = new System.Drawing.Size(154, 20);
+            this.textBoxtechPhone.TabIndex = 3;
+            // 
+            // label_techPhone
+            // 
+            this.label_techPhone.AutoSize = true;
+            this.label_techPhone.Location = new System.Drawing.Point(706, 63);
+            this.label_techPhone.Name = "label_techPhone";
+            this.label_techPhone.Size = new System.Drawing.Size(55, 13);
+            this.label_techPhone.TabIndex = 2;
+            this.label_techPhone.Text = "رقم الهاتف";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(390, 27);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(282, 20);
+            this.textBox6.TabIndex = 1;
+            // 
+            // label_techName
+            // 
+            this.label_techName.AutoSize = true;
+            this.label_techName.Location = new System.Drawing.Point(699, 27);
+            this.label_techName.Name = "label_techName";
+            this.label_techName.Size = new System.Drawing.Size(59, 13);
+            this.label_techName.TabIndex = 0;
+            this.label_techName.Text = "إسم الفني";
+            // 
+            // groupBox_maintData
+            // 
+            this.groupBox_maintData.Controls.Add(this.label_maintPrice);
+            this.groupBox_maintData.Controls.Add(this.textBox_maintPrice);
+            this.groupBox_maintData.Controls.Add(this.label_maintRequired);
+            this.groupBox_maintData.Controls.Add(this.button_maintAdd);
+            this.groupBox_maintData.Controls.Add(this.textBox_maintRequired);
+            this.groupBox_maintData.Controls.Add(this.textBox_equipMaint);
+            this.groupBox_maintData.Controls.Add(this.label_equipMaint);
+            this.groupBox_maintData.Location = new System.Drawing.Point(1, 197);
+            this.groupBox_maintData.Name = "groupBox_maintData";
+            this.groupBox_maintData.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox_maintData.Size = new System.Drawing.Size(778, 128);
+            this.groupBox_maintData.TabIndex = 8;
+            this.groupBox_maintData.TabStop = false;
+            this.groupBox_maintData.Text = "بيانات الصيانة";
+            // 
+            // label_maintRequired
+            // 
+            this.label_maintRequired.AutoSize = true;
+            this.label_maintRequired.Location = new System.Drawing.Point(699, 66);
+            this.label_maintRequired.Name = "label_maintRequired";
+            this.label_maintRequired.Size = new System.Drawing.Size(80, 13);
+            this.label_maintRequired.TabIndex = 6;
+            this.label_maintRequired.Text = "الصيانة المطلوبة";
+            // 
+            // button_maintAdd
+            // 
+            this.button_maintAdd.Location = new System.Drawing.Point(268, 27);
+            this.button_maintAdd.Name = "button_maintAdd";
+            this.button_maintAdd.Size = new System.Drawing.Size(84, 31);
+            this.button_maintAdd.TabIndex = 5;
+            this.button_maintAdd.Text = "إضافة";
+            this.button_maintAdd.UseVisualStyleBackColor = true;
+            // 
+            // textBox_maintRequired
+            // 
+            this.textBox_maintRequired.Location = new System.Drawing.Point(390, 63);
+            this.textBox_maintRequired.Name = "textBox_maintRequired";
+            this.textBox_maintRequired.Size = new System.Drawing.Size(282, 20);
+            this.textBox_maintRequired.TabIndex = 4;
+            // 
+            // textBox_equipMaint
+            // 
+            this.textBox_equipMaint.Location = new System.Drawing.Point(390, 27);
+            this.textBox_equipMaint.Name = "textBox_equipMaint";
+            this.textBox_equipMaint.Size = new System.Drawing.Size(282, 20);
+            this.textBox_equipMaint.TabIndex = 1;
+            // 
+            // label_equipMaint
+            // 
+            this.label_equipMaint.AutoSize = true;
+            this.label_equipMaint.Location = new System.Drawing.Point(699, 27);
+            this.label_equipMaint.Name = "label_equipMaint";
+            this.label_equipMaint.Size = new System.Drawing.Size(51, 13);
+            this.label_equipMaint.TabIndex = 0;
+            this.label_equipMaint.Text = "نوع الجهاز";
+            // 
+            // textBox_dateMaint
+            // 
+            this.textBox_dateMaint.Location = new System.Drawing.Point(557, 17);
+            this.textBox_dateMaint.Name = "textBox_dateMaint";
+            this.textBox_dateMaint.Size = new System.Drawing.Size(154, 20);
+            this.textBox_dateMaint.TabIndex = 8;
+            // 
+            // label_dateMaint
+            // 
+            this.label_dateMaint.AutoSize = true;
+            this.label_dateMaint.Location = new System.Drawing.Point(717, 17);
+            this.label_dateMaint.Name = "label_dateMaint";
+            this.label_dateMaint.Size = new System.Drawing.Size(35, 13);
+            this.label_dateMaint.TabIndex = 7;
+            this.label_dateMaint.Text = "التاريخ";
+            // 
+            // label_maintPrice
+            // 
+            this.label_maintPrice.AutoSize = true;
+            this.label_maintPrice.Location = new System.Drawing.Point(699, 105);
+            this.label_maintPrice.Name = "label_maintPrice";
+            this.label_maintPrice.Size = new System.Drawing.Size(66, 13);
+            this.label_maintPrice.TabIndex = 8;
+            this.label_maintPrice.Text = "تكلفة الصيانة";
+            // 
+            // textBox_maintPrice
+            // 
+            this.textBox_maintPrice.Location = new System.Drawing.Point(390, 102);
+            this.textBox_maintPrice.Name = "textBox_maintPrice";
+            this.textBox_maintPrice.Size = new System.Drawing.Size(282, 20);
+            this.textBox_maintPrice.TabIndex = 7;
+            // 
+            // button_maintOrderCopy
+            // 
+            this.button_maintOrderCopy.Location = new System.Drawing.Point(205, 464);
+            this.button_maintOrderCopy.Name = "button_maintOrderCopy";
+            this.button_maintOrderCopy.Size = new System.Drawing.Size(104, 31);
+            this.button_maintOrderCopy.TabIndex = 10;
+            this.button_maintOrderCopy.Text = "صورة أمر الشغل";
+            this.button_maintOrderCopy.UseVisualStyleBackColor = true;
+            // 
+            // button_maintExit
+            // 
+            this.button_maintExit.Location = new System.Drawing.Point(493, 461);
+            this.button_maintExit.Name = "button_maintExit";
+            this.button_maintExit.Size = new System.Drawing.Size(105, 34);
+            this.button_maintExit.TabIndex = 11;
+            this.button_maintExit.Text = "خروج";
+            this.button_maintExit.UseVisualStyleBackColor = true;
+            this.button_maintExit.Click += new System.EventHandler(this.button_maintExit_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -501,6 +766,14 @@
             this.groupBox_customerData.PerformLayout();
             this.groupBox_accountData.ResumeLayout(false);
             this.groupBox_accountData.PerformLayout();
+            this.tabPage_operationOrder.ResumeLayout(false);
+            this.tabPage_operationOrder.PerformLayout();
+            this.groupBox_customer.ResumeLayout(false);
+            this.groupBox_customer.PerformLayout();
+            this.groupBox_techData.ResumeLayout(false);
+            this.groupBox_techData.PerformLayout();
+            this.groupBox_maintData.ResumeLayout(false);
+            this.groupBox_maintData.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -509,7 +782,6 @@
 
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.TabPage tabPage_contractInfo;
-        private System.Windows.Forms.TabPage tabPage_operationOrder;
         private System.Windows.Forms.GroupBox groupBox_customerData;
         private System.Windows.Forms.TextBox textBox_customerName;
         private System.Windows.Forms.Label label_customerName;
@@ -548,5 +820,31 @@
         private System.Windows.Forms.RadioButton radioButton_installment;
         private System.Windows.Forms.RadioButton radioButton_semiPayment;
         private System.Windows.Forms.RadioButton radioButton_payAll;
+        private System.Windows.Forms.TabPage tabPage_operationOrder;
+        private System.Windows.Forms.Button button_maintOrderCopy;
+        private System.Windows.Forms.TextBox textBox_dateMaint;
+        private System.Windows.Forms.GroupBox groupBox_maintData;
+        private System.Windows.Forms.Label label_maintPrice;
+        private System.Windows.Forms.TextBox textBox_maintPrice;
+        private System.Windows.Forms.Label label_maintRequired;
+        private System.Windows.Forms.Button button_maintAdd;
+        private System.Windows.Forms.TextBox textBox_maintRequired;
+        private System.Windows.Forms.TextBox textBox_equipMaint;
+        private System.Windows.Forms.Label label_equipMaint;
+        private System.Windows.Forms.Label label_dateMaint;
+        private System.Windows.Forms.GroupBox groupBox_techData;
+        private System.Windows.Forms.Button button_technicianRecord;
+        private System.Windows.Forms.TextBox textBoxtechPhone;
+        private System.Windows.Forms.Label label_techPhone;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label_techName;
+        private System.Windows.Forms.GroupBox groupBox_customer;
+        private System.Windows.Forms.Label label_addressMaint;
+        private System.Windows.Forms.TextBox textBox_addressMaint;
+        private System.Windows.Forms.TextBox textBox_phone;
+        private System.Windows.Forms.Label label_phone;
+        private System.Windows.Forms.TextBox textBox_nameCust;
+        private System.Windows.Forms.Label label_nameCust;
+        private System.Windows.Forms.Button button_maintExit;
     }
 }

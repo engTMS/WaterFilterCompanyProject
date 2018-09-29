@@ -117,5 +117,10 @@ namespace WaterFilterCoFormsApplication
         {
             this.Close();
         }
+
+        private void button_maintExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
